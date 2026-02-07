@@ -1,5 +1,8 @@
 ### Build a Home Network ###
 ## Home Network Basics
+- Most home networks consist of at least two separate networks. The public network coming in from the service provider. The router is connected to the internet. Most likely, the home router is equipped with both wired and wireless capabilities. A home network is a small LAN with devices that usually connect to an intergrated router and to each other in order to exchange information.
+- Small business and home routers typically have two primary types of ports: ethernet ports and internet ports. In addition to the wired ports, many home routers include a radio antenna and a built-in wireless access point.
+
 # Typical Home Network Setup
 
 # Components of a Home Network
