@@ -1,5 +1,4 @@
-### Communication Principles ###
-
+### COMMUNICAITION PRINCIPLES
 ## Communication Protocols
 - Just like humans, computers use rules, or protocols, in order to communicate. Protocols are required for computers to properly communicate across the network. In both a wired or wireless environment, a local network is defined as an area where all hosts must "speak the same language", which, in computer terms means they must "share a common protocol".
 
@@ -66,7 +65,7 @@
     5. Session
         - The session layer provides services to the presentation layer to organize its dialogue and to manage data exchange
     4. Transport
-        - The transport layer defines services to segment, transferm and reassemble the data for individual communications between the end devices
+        - The transport layer defines services to segment, transform and reassemble the data for individual communications between the end devices
     3. Network
         - The network layer provides services to exchange the individual pieces of data over the network between identified end devices
     2. Data Link

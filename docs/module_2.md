@@ -1,5 +1,4 @@
-### Module 2: Network Components, Types and Connections
-
+### NETWORK COMPONENTS, TYPES & ROLES
 ## Client and Server
 # Client and Server Roles
 - All computers connected to a network that participate directly in network communications are classified as hosts.
@@ -33,7 +32,7 @@
   In a hybrid system, each peer accesses an index server to get the location of a resource stored on another peer.
 
 # Multiple Roles in the Network
-- A single computer can run multiple types of server software. In a home or small business, it may be necessary for one computer to act as a file server, a web server, and an 
+- A single computer can run multiple types of server software. In a home or small business, it may be necessary for one computer to act as a file server, a web server, and an
   email server.
 - A single computer can also run multiple types of client software. There must be client software for every service required. With multiple clients installed, a host can connect
   to multiple servers at the same time.
@@ -48,14 +47,14 @@
     - IP Phone
     - Wireless Tablet
     - TelePresence Endpoint
-  
+
   - Intermediate devices
     - Wireless Router
     - LAN Switch
     - Router
     - Multilayer Switch
     - Firewall Appliance
-  
+
   - Network media
     - Wireless Media
     - LAN Media
@@ -89,19 +88,19 @@
   provider networks in major metropolitan areas around the world. The primary medium that connects the internet backbone is fiber-optic cable. This cable is typically installed underground to connect cities within continents. Fiber-optic cables also run under the sea to connect continents, countries, and cities.
 
 # ISP Connections
-- The interconnection of ISPs that forms the backbone of the internet is a complex web of fiber-optic cables with expensive networking 
+- The interconnection of ISPs that forms the backbone of the internet is a complex web of fiber-optic cables with expensive networking
   switches and routers that direct the flow of information between source and destination hosts. Average home users are not aware of the infrastructure outside of their network. For a home user, connecting to the ISP is a fairly uncomplicated process.
 
 # Cables and DSL Connections
 - Most home network users do not connect to their service providers with fiber-optic cables. The two most common methods are:
-  - Cable: Typically offered by cable television service providers, the internet data signal is carried on the same coaxial cable that 
+  - Cable: Typically offered by cable television service providers, the internet data signal is carried on the same coaxial cable that
     delivers cable television. It provides a high bandwidth, always on, connection to the internet. A special cable modem separates the
     internet data signal from the other signals carried on the cable and provides an Ethernet connection to a host computer or LAN.
 
-  - DSL (Digital Subscriber Line): Provides a high bandwidth, always on, connection to the internet. It requires a special high-speed 
-    modem that separates the DSL signal from the telephone signal and provides the Ethernet connection to a host computer or LAN. DSL 
-    runs over a telephone line, with the line split into three channels. One channel is used for voice telephone calls. This allows 
-    an individual to receive phone calls without disconnecting from the internet. A second channel is a faster download channel, used 
+  - DSL (Digital Subscriber Line): Provides a high bandwidth, always on, connection to the internet. It requires a special high-speed
+    modem that separates the DSL signal from the telephone signal and provides the Ethernet connection to a host computer or LAN. DSL
+    runs over a telephone line, with the line split into three channels. One channel is used for voice telephone calls. This allows
+    an individual to receive phone calls without disconnecting from the internet. A second channel is a faster download channel, used
     to receive information from the internet. The third channel is used for sending or uploading information. This channel is usually slightly slower than the download channel. The quality and speed of the DSL connection depends mainly on the quality of the phone line and the distance from the central office of your phone company. The further you are from the central office, the slower the connection.
 
 # Additional Connetivity Options (for home users)
@@ -110,11 +109,11 @@
     internet access. Performance will be limited by the capabilities of the phone and the cell tower to which it is connected. The availability of cellular internet access is a real benefit for people in areas that would otherwise have no internet connectivity at all, or for people who are constantly on the move. The downside of cellular connectivity is that the carrier usually meters the bandwidth usage of the connection and may charge extra for bandwidth that exceeds the contract data plan.
 
 - Satellite
-  - Satellite service is a good option for homes or offices that do not have access to DSL or cable. Satellite dishes requires a clear 
+  - Satellite service is a good option for homes or offices that do not have access to DSL or cable. Satellite dishes requires a clear
     line of sight to the satellite and so might be difficult in heavily wooded areas or places with other overhead obstructions. Speeds will vary depending on the contract, though they are generally good. Equipment and installation costs can be high (although check the provider for special deals), with a moderate monthly fee thereafter, Like cellular access, the availability of satellite internet access is a real benefit in areas that would otherwise have no internet connectivity at all.
 
 - Dial-up Telephone
-  - An inexpensive option that uses any phone line and a modem. To connect to the ISP, a user calls the ISP access phone number. The 
+  - An inexpensive option that uses any phone line and a modem. To connect to the ISP, a user calls the ISP access phone number. The
     low bandwidth provided by a dial-up modem connection is usually not sufficient for large data transfer, although it is useful for
     mobile access while traveling. A modem dial-up connection should only be considered when higher speed connection options are not
     available.

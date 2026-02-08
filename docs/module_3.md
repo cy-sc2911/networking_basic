@@ -1,5 +1,4 @@
-### Module 3: Wireless and Mobile Networks
-
+### WIRELESS & MOBILE NETWORKS
 ## Wireless Networks
 - Mobile phones use radio waves to transmit voice signals to antennas mounted on towers located in specific
     geographic areas. When a telephone call is made, the voice signals is relayed from one tower to another tower until it is delivered to its destination. It is also used to send messages directly from the phone.

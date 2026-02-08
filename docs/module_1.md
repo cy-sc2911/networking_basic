@@ -1,4 +1,4 @@
-## Introduction to Network
+## INTRODUCTION TO NETWORK
 - What is a network?
    A system of two or more connected computing devices(such as computers, smartphones, servers, etc) that communicate with each other to share resources, data and applications.
 
