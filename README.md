@@ -30,5 +30,9 @@ A documentation on learning the basics of computer networking and how networks o
 - netstat
 - Packet Tracer simulation mode
 
+# Weak subjects
+ - Communication Principles
+ - The Access Layer
+
 ## Disclaimer
 This repository is for educational purposes only
