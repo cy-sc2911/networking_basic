@@ -16,3 +16,9 @@
 
     - It's better but still difficult to read. That is why each octet is converted into its decimal value, separated by a decimal point or period. The above binary IPv4 becomes the below dotted-decimal representation:
         - 209.165.200.1
+
+# IPv4 Structure
+    - The logical 32-bit IPv4 address is hierarchical and is made up of two parts, the network, and the host.
+        - For example, there is a host with an IPv4 address 192.168.5.11 with a subnet mask of 255.255.255.0. The first three octets, (192.168.5), identify the network portion of the address, and the last octet, (11) identifies the host. This is know as a hierarchical addressing because the network portion indicates the network on which each unique host address is located.
+
+    - Routers only need to know how to reach each other, rather than needing to know the location of each individual host. With IPv4 addressing, multiple logical networks can exist on one physical network if the network portion of the logical network host addresses is different.
