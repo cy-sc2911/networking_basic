@@ -74,7 +74,9 @@
     - RIRs are responsible for allocating IP addresses to ISPs who provide IPv4 address blocks to organizations and smaller ISPs. Organizations can also get their addresses directly from an RIR(subject to the policies of that RIR).
 
         - AfriNIC (African Network Information Centre) - Africa Region
-        - <strong>APNIC</strong> (Asia Pacific Network Information Centre) - Asia/Pacific Region
-        - <strong>ARIN</strong> (American Registry for Internet Numbers) - North America Region
-        - <strong>LACNIC</strong> (Regional Latin-American and Caribbean IP Address Registry) - Latin America and some Caribbean Islands
-        - <strong>RIPE NCC</strong> (Réseaux IP Européens Network Coordination Centre) - Europe, the Middle East, and Central Asia
+        - APNIC (Asia Pacific Network Information Centre) - Asia/Pacific Region
+        - ARIN (American Registry for Internet Numbers) - North America Region
+        - LACNIC (Regional Latin-American and Caribbean IP Address Registry) - Latin America and some Caribbean Islands
+        - RIPE NCC (Réseaux IP Européens Network Coordination Centre) - Europe, the Middle East, and Central Asia
+
+## Network Segmentation
