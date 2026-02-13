@@ -45,3 +45,36 @@
 # Special Use IPv4 Addresses
     - There are certain addresses, such as network address and broadcast address, that cannot be assigned to hosts. There are also special addresses that can be assigned to hosts, but with restrictions on how those hosts can interact within the network.
 
+    Loopback addresses
+     - Loopback addresses (127.0.0.0 /8 or 127.0.0.1 to 127.255.255.254) are more commonly identifies as only 127.0.0.1. These are special addresses used by a host to direct traffic itself.
+        - Example, the ping command is commonly used to test connections to other hosts. But you can also use the ping command to test if the IP configuration on your own device
+
+    Link-local addresses
+        - Link-local addresses (169.254.0.0/16 or 169.254.0.1 to 169.254.255.254) are more commomly knows as the Automate Private IP Addressing (APIPA) addresses or self-assigned addresses. They are used by a Windows client to self-configure in the event that the client cannot obtain an IP addressing through other methods. Link-local addresses can be used in a peer-to-peer connection but are not commonly used for this purpose.
+
+# Legacy Classful Addressing
+    - In 1981, IPv4 addresses were assigned using classful addressing as defined in RFC 790, Assigned Numbers. Customers were allocated a network address based on one of three classes, A, B, or C. The RFC divided the unicast ranges into specific classes:
+        - Class A (0.0.0.0/8 to 127.0.0.0/8)
+            - Designed to support extremely large neworks with more than 16 million host addresses. Classes A used a fixed /8 prefix witt the first octet to indicate the network address and the remaining threee octets for host addresses (more than 16 million host addresses per network)
+        - Class B (128.0.0.0 /16 - 191.255.0.0 /16)
+            - Designed to support the needs of moderate to large size networks with up to approximately 65, 000 host addresses. Class B used a fixed /16 prefix with the two high-order octets to indicate the network address and the remaining two octets for host addresses (more than 65,000 host addresses per network)
+        - Class C (192.0.0.0 /24 to 223.255.255.0 /24)
+            - Designed to support small networks with maximum of 254 hosts. Class C used a fixed /24 prefix with the first three octets to indicate the network and the remaining octet for the host addresses (only 254 host addresses per network)
+
+    Note: There is also a Class D multicast block consisting of 224.0.0.0 to 239.0.0.0 and a Class E experimental address block consisting of 240.0.0.0 - 255.0.0.0.
+
+    - At the time, with a limited number of computers using the internet, classful addressing was an effective means to allocate addresses.
+    - In the mid-1990s, with the introduction of the World Wide Web (WWW), classful addressing was deprecated to more efficiently allocate the limited IPv4 address space. Classful address allocation was replaced with classless addressing, which is used today. Classless addressing ignores the rules of classes (A, B, C). Public IPv4 network addresses (network addresses and subnet masks) are allocated based on the number of addresses that can be justified.
+
+# Regional Internet Registries (RIR)
+    - Public IPv4 addresses are addresses which are globally routed over the internet. Public IPv4 addresses must be unique.
+    - Both IPv4 and IPv6 addresses are managed by the Internet Assigned Numbers Authority (IANA). The IANA manages and allocates blocks of IP addresses to the Regional Internet Registries (RIRs).
+        - The five RIRs are ![RIR](images/Regional_Internet_Reg.png)
+
+    - RIRs are responsible for allocating IP addresses to ISPs who provide IPv4 address blocks to organizations and smaller ISPs. Organizations can also get their addresses directly from an RIR(subject to the policies of that RIR).
+
+        - AfriNIC (African Network Information Centre) - Africa Region
+        - <strong>APNIC</strong> (Asia Pacific Network Information Centre) - Asia/Pacific Region
+        - <strong>ARIN</strong> (American Registry for Internet Numbers) - North America Region
+        - <strong>LACNIC</strong> (Regional Latin-American and Caribbean IP Address Registry) - Latin America and some Caribbean Islands
+        - <strong>RIPE NCC</strong> (Réseaux IP Européens Network Coordination Centre) - Europe, the Middle East, and Central Asia
