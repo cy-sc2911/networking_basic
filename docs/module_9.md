@@ -80,3 +80,30 @@
         - RIPE NCC (Réseaux IP Européens Network Coordination Centre) - Europe, the Middle East, and Central Asia
 
 ## Network Segmentation
+# Broadcast Domains and Segmentation
+    - In an Ethernet LAN, devices use broadcasts and the Address Resolution Protocol (ARP) to locate other devices. ARP sends Layer 2 broadcasts to a know IPv4 address on the local network to discover the associated MAC address. Devices on Ethernet LANs also locate other devices using services. A host typically acquires its IPv4 address configuration using the Dynamic Host Configuration Protocol (DHCP) which sends broadcasts on the local network to locate a DHCP server.
+    - Switches propagate broadcasts out all interfaces except the interface on it which it was received.
+
+    Routers Segment Broadcast Domains
+    - Routers do not propagate broadcasts. When a router receives a broadcast, it does not forward it out other interfaces.
+    - Each router interface connects to a broadcast domain and broadcasts are only propagated within that specific broadcast domain.
+
+# Problems with Large Broadcast Domains
+    - A large broadcast domain is a network that connects many hosts. A problem with a large broadcast domain is that these hosts can generate excessive broadcasts and negatively affect the network.
+
+    Communicating between Networks
+    - The solution is to reduce the size of the network to create smaller broadcast domains in a process called subnetting. These smaller network spaces are called subnets.
+    - The prefix length has changed from a single /16 network to two /24 networks. This is the basis of subnetting: using host bits to create additional subnets.
+
+    Note: The terms subnet and network are often used interchangeably. Most networks are a subnet of some larger address block.
+
+# Reasons for Segmenting Networks
+    - Subnetting reduces overall network traffic and improves network performances. It also enables an administrator to implement security policies such as which subnets are allowed or not allowed to communicate together. Another reason is that it reduces the number of devices affected by abnormal broadcast traffic due to misconfigurations, hardware/software problems, or malicious intent.
+    - There are various ways of using subnets to help manage network devices:
+        - Subnetting by location
+            ![location](images/subnet_by_location.png)
+        - Subnetting by Group or Function
+            ![GroupOrFunc](images/func.png)
+        - Subnetting by Device Type
+            ![DeviceType](images/deviceType.png)
+    - Network administratos can create subnets using any other division that makes sense for the network. Understanding how to subnet networks is a fundamental skill that all network administratos must develop.
