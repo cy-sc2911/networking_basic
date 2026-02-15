@@ -12,4 +12,20 @@
         - The internet of today is significantly different than the internet of past decades. The internet of today is more than email, web pages, and file transfers between computers. The evolving internet is becoming an Internet of Things (IoT). No longer will the only devices accessing the internet be computers, tablets, and smartphones. The sensor-equipped, internet-ready devices of tomorrow will include everything from automobiles and biomedical devices, to household appliances and natural ecosystems.
 
 # IPv4 and IPv6 Coexistence
-    -
+    - The IETF has created various protocols and tools to help network administrators migrate their networks to IPv6. The migration techniques can be divided into three categories:
+        - Dual stack
+            - Allows IPv4 and IPv6 to coexist on the same network segment. Dual stack devices run both IPv4 and IPv6 protocol stack simultaneously. Known as native IPv6, this mean the customer network has an IPv6 connection to their ISP and is able to access content found on the internet over IPv6.
+            ![dual](images/dualStack.png)
+
+        - Tunneling
+            - A method of transporting an IPv6 packet over an IPv4 network. The IPv6 packet is encapsulated inside an IPv4 packet, similar to other types of data.
+            ![tunnel](images/tunnelling.png)
+
+        - Translation
+            - Network Address Translation 64 (NAT64) allows IPv6-enabled devices to communicate with IPv4-enabled devices using a translation technique similar to NAT for IPv4. An IPV6 packet is translated to IPv4 packet and an IPv4 packet is translated to an IPv6 packet.
+            ![translation](images/translation.png)
+
+        Note: Tunneling and translation are for transitioning to native IPv6 and should only be used where needed.
+
+# IPv6 Addressing
+    - 
