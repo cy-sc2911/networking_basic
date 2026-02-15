@@ -1,4 +1,4 @@
-# IPv6 Addressing Formats and Rules
+### IPv6 Addressing Formats and Rules
 ## IPv4 Issues
     (Regional Internet Registry) RIR IPv4 Exhaustion Dates
         - IPv6 is designed to be the successor to IPv4. IPv6 has a larger 128-bit address space, providing 340 undecillion (i.e., 340 followed by zeroes) possibles addresses. However, IPv6 is more than just larger addresses.
@@ -11,7 +11,7 @@
     Internet of Thing (IoT)
         - The internet of today is significantly different than the internet of past decades. The internet of today is more than email, web pages, and file transfers between computers. The evolving internet is becoming an Internet of Things (IoT). No longer will the only devices accessing the internet be computers, tablets, and smartphones. The sensor-equipped, internet-ready devices of tomorrow will include everything from automobiles and biomedical devices, to household appliances and natural ecosystems.
 
-### IPv4 and IPv6 Coexistence
+# IPv4 and IPv6 Coexistence
     - The IETF has created various protocols and tools to help network administrators migrate their networks to IPv6. The migration techniques can be divided into three categories:
         Dual stack
             Allows IPv4 and IPv6 to coexist on the same network segment. Dual stack devices run both IPv4 and IPv6 protocol stack simultaneously. Known as native IPv6, this mean the customer network has an IPv6 connection to their ISP and is able to access content found on the internet over IPv6.
@@ -30,11 +30,11 @@
 
         Note: Tunneling and translation are for transitioning to native IPv6 and should only be used where needed.
 
-### IPv6 Addressing
+# IPv6 Addressing
     IPv6 addresses are represented using hexadecimal numbers. This base sixteen number system uses the digits 0 to 9 and the letters A to F.
     In IPv6 addresses, these 16 digits are represented as hextets allowing us to represent these massive addresses in a much more readable format.
 
-### IPv6 Formatting Rules
+# IPv6 Formatting Rules
     16-bit Segments or Hextets
         IPv6 addresses are much larger than IPv4 addressses, which is why we are unlikely to run out of them.
         IPv6 addresses are 128 bits in length and written as a string of hexadecimal values. Every four bits is represented by a single hexadecimal digit; for a total of 32 hexadecimal values. IPv6 addresses are not case-sensitive and can be written in either lowercase or uppercase.
@@ -58,7 +58,7 @@
                     0000 : 0000 : 0000 : 0000 : 0000 : 0000 : 0000: 0001
                     0000 : 0000 : 0000 : 0000 : 0000 : 0000 : 0000: 0001
 
-### Rule 1 - Omit Leading Zeros
+# Rule 1 - Omit Leading Zeros
     The first rule to help reduce the notation of IPv6 addresses is to omit any leading 0s (zeros) in any hextet.
         Examples:
             01ab = 1ab
