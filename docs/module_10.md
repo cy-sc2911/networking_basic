@@ -65,3 +65,10 @@
             09f0 = 9f0
             0a00 = a00
             00ab = ab
+    This rule only applies to leading 0s, NOT to trailing 0s, otherwise the address would be ambiguous.
+
+# Rule 2 - Double Colon
+    The second rule to help reduce the notation of IPv6 addresses is that a double colon (::) can replace any single, contigous string of one or more 16-bit hextets consisting of all zeros.
+    The double colon (::) can only be used once within an address, otherwise there would be more than one possible resulting address. When used with the omitting leading 0s technique, the notation of IPv6 address can often be greatly reduced. This is commonly known as the compressed format.
+    If an address has more than one contiguous string of all-0 hextets, best practice is to use the double colon (::) on the longest string. If the strings are equal, the first string should use the double colon (::).
+    
