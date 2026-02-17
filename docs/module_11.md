@@ -25,5 +25,6 @@
     Many home networks and small businesses use a wireless router and modem. In this case, the wireless router is both a DHCP client and a server. The wireless router acts as a client to receive its IPv4 configuration from the ISP and then acts as a DHCP server for internal hosts on the local network. The router receives the public IPv4 address from the ISP, and in its role as a DHCP server, it distributes private addresses to internal hosts.
     In addition to PC-based servers and wireless routers, other types of networking devices such as dedicated routers can provide DHCP services to clients, although this is not as common.
 
-# DHCPv4 Configuration
-
+## DHCPv4 Configuration
+# DHCPv4 Operation
+    DHCPv4 (Dynamic Host Configuration Protocol for IPv4) automates IP address assignment using a four-step DORA process (Discover, Offer, Request, Acknowledge)
