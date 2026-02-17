@@ -16,10 +16,14 @@
     - ![Network Topology](images/topology.png)
 
 ## Configuration Summary
-    - Wireless router configured with DHCP IPs
-    - PCs and laptop assigned IPv4 addresses
+    The three PCs are configured to receive DHCP IP addresses
+    ![DHCPconfig](images/assignDHCP.png)
 
+    Changing the IP address to : 192.168.5.1
+    ![IPchange](images/changingDefaultAddr.png)
+
+    Sucessful login on new IP: 192.168.5.1
+    ![Success](images/NewIP.png)
 
 ## Verification
-    - Successful connection to skillsforall.srv
-    - ![Connected](images/connect_success.png)
+    - Successful connection
