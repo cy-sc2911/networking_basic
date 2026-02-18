@@ -1,5 +1,7 @@
 ### Dynamic Addressing with DHCP
 ## Static and Dynamic Addressing
+    With a static assignment, the network administrator must manually configure the network information for a host. At a minimum, this includes the host IPv4 address, subnet mask, and default gateway. Static assignment of addressing information can provide increased control of network resources, but it can be time consuming to enter the information on each host. When using static IPv4 addressing, it is important to maintain an accurate list of which IPv4 addresses are assigned to which devices.
+
 # Static IPv4 Address Assignment
     IPv4 addresses can be assigned either statistically or dynamically.
     With a static assignment, the network administrator must manually configure the network information for a host. At a minimum, this includes the following:
@@ -26,5 +28,7 @@
     In addition to PC-based servers and wireless routers, other types of networking devices such as dedicated routers can provide DHCP services to clients, although this is not as common.
 
 ## DHCPv4 Configuration
+    The DHCP server is configured with a range, or pool, of IPv4 addresses that can be assigned to DHCP clients. A client that needs an IPv4 address will send a DHCP Discover message which is a broadcast with a destination IPv4 address of 255.255.255.255 (32ones) and a destination MAC address of FF-FF-FF-FF-FF-FF (48 ones). All hosts on the network will receive this broadcast DHCP frame, but only a DHCP server will reply. The server will respond with a DHCP Offer, suggesting an IPv4 address for the client. The host then sends a DHCP Request asking to use the suggested IPv4 address. The server responds with a DHCP Acknowledgement.
+
 # DHCPv4 Operation
     DHCPv4 (Dynamic Host Configuration Protocol for IPv4) automates IP address assignment using a four-step DORA process (Discover, Offer, Request, Acknowledge)
