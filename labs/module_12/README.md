@@ -18,7 +18,7 @@
     Configured local area network
         ![LAN](images/local_network.png)
 
-    Setting up simulation panel to capture NAT
+    Setting up simulation panel (http and tcp) to capture NAT
         ![setting](images/setUp_simulation.png)
         ![simulateON](images/simulationONgoing.png)
 
@@ -33,3 +33,6 @@
         PC3
             ![pc3](images/pc3.png)
 
+    Sucessful simulation
+        ![inbound](images/inboundPDU.png)
+        ![outbound](images/outboundPDU.png)
