@@ -25,3 +25,5 @@
                 The new destination MAC address would be that of the R2 GO/0/1 interface and the new source MAC address would be that of the R1 GO/0/1 interface.
 
                 Along each link in a path, an IP packet is encapsulated in a frame. The frame is specific to the data link technology that is associated with that link, such as Ethernet. If the next-hop device is the final destination, the destination MAC address will be that of the device Ethernet NIC.
+
+    NOTE: Address Resolution Protocol (ARP) is used to determine the device MAC address of a known destination device IPv4 address. Neighbor Discovery (NP) is used to determine the MAC address of a known destination device IPv6 address.
