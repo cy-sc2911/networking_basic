@@ -1,4 +1,5 @@
 ### The Arp Process
+
 ## Mac and IP
 # Destination on Same Network
     Sometimes a host must send a message, but it only knows the IP address of the destination device. The host needs to know the MAC address of that device, but how can it be discovered? That is where address resolution becomes critical.
@@ -27,3 +28,11 @@
                 Along each link in a path, an IP packet is encapsulated in a frame. The frame is specific to the data link technology that is associated with that link, such as Ethernet. If the next-hop device is the final destination, the destination MAC address will be that of the device Ethernet NIC.
 
     NOTE: Address Resolution Protocol (ARP) is used to determine the device MAC address of a known destination device IPv4 address. Neighbor Discovery (NP) is used to determine the MAC address of a known destination device IPv6 address.
+
+## Broadcast Containment
+# Ethernet Braodcast
+    An Ethernet Broadcast is when the destination MAC address is 48 one-bits, or in hexadecimal, all FS.
+        Example:
+            In a SOHO network with 2 switches, and each switches have 4 PCs. Switch A have a new PC labelled as PC4. PC4 is going to send a broadcast to all other devices. This might be a message that it needs all the devices in its network to receive. When a switch receives an Ethernet broadcast, it floods, or forwards, the Ethernet frame out all ports except the incoming port. The result is, all the devices in the network will receive the broadcast. If the SOHO have a router in the network, it will receive the broadcast also. However the router wil not forward the broadcast on to other network.
+
+# Broadcast Domain
