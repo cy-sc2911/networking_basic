@@ -35,4 +35,19 @@
         Example:
             In a SOHO network with 2 switches, and each switches have 4 PCs. Switch A have a new PC labelled as PC4. PC4 is going to send a broadcast to all other devices. This might be a message that it needs all the devices in its network to receive. When a switch receives an Ethernet broadcast, it floods, or forwards, the Ethernet frame out all ports except the incoming port. The result is, all the devices in the network will receive the broadcast. If the SOHO have a router in the network, it will receive the broadcast also. However the router wil not forward the broadcast on to other network.
 
-# Broadcast Domain
+# Broadcast Domains
+    When a host receives a message addressed to the broadcast address, it accepts and processes the message as though the message was addressed directly to it. When a host sends a broadcast message, switches forward the message to every connected host within the same local network. For this reason, a local area network, a network with one or more Ethernet switches, is also referred to as a broadcast domain.
+    If too many hosts are connected to the same broadcast domain, a broadcast traffic can become excessive. The number of hosts and the amount of network traffic that can be supported on the local network is limited by the capabilities of the switches used to connect them. As the network grows and more hosts are added, network traffic, including broadcast traffic, increases. To improve performance, it is necessary to divide one local network into multiple networks, or broadcast domains. Routers are used to divide the network into multiple broadcast domains.
+
+# Access Layer Communication
+    On a local Ethernet network, a NIC(Network Interface Card) only accepts a frame if the destination address is either the broadcast MAC address, or else corresponds to the MAC address of the NIC.
+    Most network applications, however, rely on the logical destination IP address to identify the location of the servers and clients. If the sending host only has the logical IP address of the destination host, it can use an IPv4 protocol called address resolution protocol (ARP) to discover the MAC address of any host on the same local network. IPv6 uses a similar method knows as Neighbor Discovery (ND).
+
+# Address Resolution Protocol (ARP)
+    ARP uses a three step process to discover and store the MAC address of a host on the local network when only the IPv4 address of the host is knows:
+
+        1. The sending host creates and sends a frame addressed to a broadcast MAC address. Containted in the frame is a message with the IPv4 address of the intended destination host.
+        2. Each host on the network receives the broadcast frame and compares the IPv4 address inside the message with its configured IPv4 address. The host with the matching IPv4 address sends its MAC address back to the original sending host.
+        3. The sending host receives the message and stores the MAC address and IPv4 address information in a table called an ARP table.
+
+    When the sending host has the MAC address of the destination host in its ARP table, it can send frames directly to the destination without doing an ARP request. Because ARP messages rely on broadcast frames to deliver the requests, all hosts in the local IP4 network must be in the same broadcast domain.
