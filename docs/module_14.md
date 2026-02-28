@@ -71,3 +71,5 @@
                     Requires the use of routing (distribution layer)
                     Router can slow traffic between segments
                     More complexity and expense (requires a router)
+
+Note: When a router receives a frame on an interface, it strips the header containing the source and destination MAC addresses from the frame. The router checks the routing table to determine the interface to use to send the packet to its destination. The packet is then encapsulated in a new frame, with a different header information.
