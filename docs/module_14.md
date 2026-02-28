@@ -1,6 +1,21 @@
 ### Routing between Networks
 
 ## The Need for Routing
+    As networks grow, it is often necessary to divide one access layer network into multiple access layer networks. There are many ways to divide networks based on different criteria.
+
+        Broadcast entertainment
+            Routers in the distribution layer can limit broadcasts to the local network where they need to be heard.
+
+        Security requirements
+            Routers in the distribution layer can be used to interconnect local networks at various locations of an organization that are geographically separated.
+
+        Logical grouping
+            Routers in the distribution layer can be used to logically group users, such as departments within a company who have common needs or for access to resources.
+
+    The distribution layer connects these independent local networks and controls the traffic flowing between them. It is responsible for ensuring that traffic between hosts on the local network stays local.
+    A router is a networking device that connects multiple Layer 3, IP networks, At the distribution layer of the network, routers direct traffic and perform other functions critical to efficient network operation. Routers, like switches, are able to decode and read the messages that are sent to them. Unlike switches, which make their forwarding decision based on the Layer 2 MAC address, routers make their forwarding decision based on the Layer 3 IP address.
+    Anytime the network portion of the IP addresses of the source and destination hosts do not match, a router must be used to forward the message.
+
 # Dividing the Local Network
     Routing is the process of identifying the best path to a destination.
     A router is a networking device that connects multiple Layer 3, IP networks. At the distribution layer of the network, routers direct traffic and perform other functions critical to efficient network operations. Routers, like switches are able to decode and read the messages that are sent to them. Unlike switches, which make their forwarding decision based on the Layer 2 MAC address, routers make their forwarding decision based on the Layer 3 IP address.
