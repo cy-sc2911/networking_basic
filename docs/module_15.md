@@ -1,7 +1,8 @@
 ### TCP and UDP
 
 ## TCP and UDP
-
+    UDP is a 'best effort' delivery system that does not require acknowledgement of receipt. UDP is a perferable with applications such as streaming audio and VoIP (Voice over Internet Protocol). Acknowledgement would slow down delivery and retransmissions are undesirable. Packets take a path from the source to a destination. A few packets may be lost but it is usually not noticeable.
+    TCP packets take a path from the source to the destination. However, each of the packets has a sequence number. TCP breaks up a message into small pieces known as segments. The segments are numbered in sequence and passed to the IP process for assemnly into packets. TCP keeps track of the number of segments that have been sent to a specific host from a specific application. If the sender does not receive an acknowledgement within a certain period of time, it assumes that the segments were lost and retransmits them. Only the portion of the message that is lost is resent, not the entire message.
 
 ## Port Numbers
 # TCP and UDP Port Numbers
@@ -36,4 +37,10 @@
     Some applications may use both TCP and UDP. For example, DNS uses UDP when clients send requests to a DNS server. However, communication between two DNS servers always uses TCP.
 
 # Socket Pairs
-    The source and destination ports are placed within the segment.
+    The source and destination ports are placed within the segment. The segments are then encapsulated within an IP packet. The IP packet contains the IP address of the source and destination. The combination of the source IP address and source port number, or the destination IP address and destination port number is known as a socket.
+    Sockets enable multiple processes, running on a client, to distinguish themselves from each other, and mutiple connections to a server process to be distinguished from each other.
+    The source port number acts as a return address for the requesting application. The transport layer keeps track of this port and the application that initiated the request so that when a response is returned, it can be forwarded to the correct application.
+
+# The netstat Command
+    Unexplained TCP connections can pose a major security threat. They can indicate that something or someone is connected to the local host. Sometimes it is necessary to know which active TCP connections are open and running on a networked host. Netsat is an important network utility that can be used to verify those connections.
+    By default, the netstat command will attempt to resolve IP addresses to domain names and port numbers to well-known applications. The -n option can be used to display IP addresses and port numbers in their numerical form.
