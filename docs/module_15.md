@@ -18,4 +18,22 @@
             Ports 49152 through 65535 are often used as source ports. These ports can be used by any application.
 
     Below are some commom well-known port numbers and their associated applications.
-        
+        TCP       Port 20   File Transfer Protocol (FTP) - Data
+        TCP       Port 32   FTP - Control
+        TCP       Port 22   Secure Shell (SSH)
+        TCP       Port 23   Telnet
+        TCP       Port 25   Simple Mail Transfer Protocol (SMTP)
+        UDP/TCP   Port 53   Domain Name Service (DNS)
+        UDP       Port 67   Dynamic Host Configuration Protocol (DHCP) - Server
+        UDP       Port 68   DHCP - Client
+        UDP       Port 69   Trivial File Transfer Protocol (TFTP)
+        TCP       Port 80   HyperText Transfer Protocol (HTTP)
+        TCP       Port 110  Post Office Protocol version 3 (POP3)
+        TCP       Port 143  Internet Message Access Protocol (IMAP)
+        UDP       Port 161  Simple Network Management Protocol (SNMP)
+        TCP       Port 443  Hypertext Transfer Protocol Secure (HTTPS)
+
+    Some applications may use both TCP and UDP. For example, DNS uses UDP when clients send requests to a DNS server. However, communication between two DNS servers always uses TCP.
+
+# Socket Pairs
+    The source and destination ports are placed within the segment.
